@@ -104,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "O Futuro da Medicina...";
+    caixaPerguntas.textContent = "O Futuro da Medicina";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
