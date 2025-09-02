@@ -1,10 +1,9 @@
-:root{
-    --cor-fundo: #025eaf ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #004fc5;
-    --cor-texto: #D7F9FF;
-
+:root {
+    --cor-fundo: #025eaf; /* Azul escuro */
+    --cor-principal: #0B0D20; /* Cor de fundo principal */
+    --cor-secundaria: #212333; /* Cor secundária */
+    --cor-destaque: #2BDEFD; /* Azul claro para destaque */
+    --cor-texto: #D7F9FF; /* Texto claro */
 }
 
 body {
@@ -14,18 +13,30 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-.caixa-principal{
+.caixa-principal {
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
     text-align: center;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
-h1{
+h1 {
     color: var(--cor-destaque);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.caixa-perguntas {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: var(--cor-texto);
 }
 
 button {
@@ -34,10 +45,28 @@ button {
     border: none;
     border-radius: 15px;
     padding: 15px;
-    transition: background-color 0.3s;
+    margin: 10px 0;
+    font-size: 1.1em;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-button:hover{
+button:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
+    transform: scale(1.05);
+}
+
+.caixa-resultado {
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.texto-resultado {
+    font-size: 1.2em;
+    color: var(--cor-texto);
 }
